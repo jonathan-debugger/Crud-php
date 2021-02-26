@@ -1,0 +1,25 @@
+<?php
+require('metodosCrud.php');
+$personas= new Personas(); 
+$personas=$personas->Read();
+
+$posiciones =array();
+$i=0;
+while($data=$personas->fetch_array()){
+
+
+
+
+$posiciones[]=$data;
+
+
+
+
+
+$i++;
+}
+
+
+echo '<br>';
+print json_encode($posiciones);
+?>

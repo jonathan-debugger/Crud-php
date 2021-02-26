@@ -1,0 +1,7 @@
+.col-lg-12{
+	display: flex;
+    justify-content: center;
+}
+.tabla{
+	width: 1300px;
+}
