@@ -35,12 +35,6 @@ echo $datos['Nombres'];
 }
 */
 
-$con = new mysqli('127.0.0.1', 'root', '', 'crud');
-$query=mysqli_query($con,"select  * from personas");
-$q=mysqli_fetch_assoc($query);
-foreach ($q as $key) {
-	echo $key;
-}
 ?>
 
 
